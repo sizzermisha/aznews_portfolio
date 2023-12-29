@@ -13,5 +13,6 @@ if ($connect->prepare("
         "name" => $_POST['name'],
         "color" => $_POST['color'] ]))
 {
-    header('Location: http://localhost:5500/admin.php');
+	require_once '../const.php'; 
+	header("Location: " . URL_SITE . "/admin.php"); 
 }

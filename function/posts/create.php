@@ -27,5 +27,8 @@ if (move_uploaded_file(
         ])
     )
 
-	{ header('Location: http://localhost:5500/admin.php'); }
+	{
+		require_once '../const.php'; 
+		header("Location: " . URL_SITE . "/admin.php"); 
+	}
 }
